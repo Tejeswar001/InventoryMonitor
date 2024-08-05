@@ -8,6 +8,7 @@ import { ref, uploadBytes, getDownloadURL } from 'firebase/storage';
 import { AuthContext } from '@/AuthContext';
 import { signInWithEmailAndPassword, createUserWithEmailAndPassword } from 'firebase/auth';
 import imageCompression from 'browser-image-compression';
+import Image from 'next/image';
 
 export default function Home() {
   const { user, signOut } = useContext(AuthContext);
@@ -241,8 +242,8 @@ export default function Home() {
                 marginBottom: '20px'
               }}
             >
-              Welcome to the Inventory Management System! We're thrilled to have you here. Our application is designed to help you efficiently manage your inventory with ease. Whether you’re tracking items, organizing categories, or keeping an eye on expiration dates, our intuitive interface and powerful features are here to streamline your experience. Begin by signing up to create your account or log in to access your existing inventory.
-            </Typography>
+             Welcome to the Inventory Management System! We&apos;re thrilled to have you here. Our application is designed to help you efficiently manage your inventory with ease. Whether you&apos;re tracking items, organizing categories, or keeping an eye on expiration dates, our intuitive interface and powerful features are here to streamline your experience. Begin by signing up to create your account or log in to access your existing inventory.
+             </Typography>
 
             <Box display="flex" flexDirection="row" justifyContent="center" gap={2} flexWrap="wrap" sx={{ mb: 4 }}>
               <Card sx={{ maxWidth: 345 }}>
@@ -257,7 +258,7 @@ export default function Home() {
                     Real-Time Inventory Tracking
                   </Typography>
                   <Typography variant="body2" color="text.secondary">
-                  Keep an up-to-date view of your inventory with real-time tracking. Our system updates the inventory levels instantly as items are added, edited, or removed, ensuring you always have accurate information at your fingertips. 
+                  Keep an up-to-date view of your inventory with real-time tracking. Our system updates the inventory levels instantly as items are added, edited, or removed, ensuring you always have accurate information at your fingertips.
                   </Typography>
                 </CardContent>
               </Card>
@@ -273,7 +274,7 @@ export default function Home() {
                     Flexible Image Uploads
                   </Typography>
                   <Typography variant="body2" color="text.secondary">
-                    Enhance your inventory entries with visual details. You can upload images of items both from your device and directly from your camera. Whether you’re adding new products or updating existing ones. 
+                  Enhance your inventory entries with visual details. You can upload images of items both from your device and directly from your camera. Whether you&rsquo;re adding new products or updating existing ones.
                   </Typography>
                 </CardContent>
               </Card>
@@ -289,7 +290,7 @@ export default function Home() {
                     Expiration Date Alerts
                   </Typography>
                   <Typography variant="body2" color="text.secondary">
-                  Stay ahead of potential issues with our expiration date alerts. The system highlights items nearing their expiration date, helping you take action before they become obsolete. 
+                  Stay ahead of potential issues with our expiration date alerts. The system highlights items nearing their expiration date, helping you take action before they become obsolete.
                   </Typography>
                 </CardContent>
               </Card>
